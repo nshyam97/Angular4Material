@@ -6,6 +6,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatTooltipModule } from '@angular/material/tooltip'
 
 
 import { AppComponent } from './app.component';
@@ -28,7 +29,8 @@ import { AboutComponent } from './about/about.component';
     MatTabsModule,
     MatIconModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [

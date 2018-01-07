@@ -1,5 +1,7 @@
 <mat-toolbar class="mat-elevation-z5" color="primary">
     <h1 class="first">nishanth</h1><h1 class="second">shyam</h1>
+    <button class="dark-mode" *ngIf="isLight" matTooltip="Bit too bright?" matTooltipPosition="before" (click)="changeMode()"><mat-icon>brightness_low</mat-icon></button>
+    <button class="light-mode" *ngIf="isDark" matTooltip="Bit too dark?" matTooltipPosition="before" (click)="changeMode()"><mat-icon>brightness_high</mat-icon></button>
 </mat-toolbar>
 <about></about>
 <contact></contact>

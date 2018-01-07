@@ -11,4 +11,18 @@ mat-toolbar {
             font-size: 90px;
         }
     }
+    .dark-mode, .light-mode {
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+        position: absolute;
+        right: 60px;
+        top: 30px;
+    }
+    mat-icon {
+        font-size: 32px;
+    }
 }
