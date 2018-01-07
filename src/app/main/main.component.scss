@@ -2,15 +2,13 @@ mat-toolbar {
     align-items: flex-start; 
     height: 100px;
 
-    .title {
+    .first, .second {
         margin-top: 20px;
-        font-size: 50px;
-        font-family: Merriweather, serif;
-    }
+        font-size: 45px;
+        font-family: 'Catamaran', sans-serif;
 
-    .sub {
-        margin-left: 0px;
-        margin-bottom: 25px;
-        font-family: Raleway, sans-serif;
+        &::first-letter {
+            font-size: 90px;
+        }
     }
 }

@@ -1,2 +1,24 @@
-<h1>Some tab content</h1>
-<p>...</p>
+<div [@moveCard]='state' fxLayout fxLayoutGap=10px fxLayout.xs="column"> 
+    <mat-card class="header">
+        <mat-card-title class="hTitle">Hello!</mat-card-title>
+        <p> I am Nishanth Shyam, a computer science student graduating from Newcastle University in 2019. Currently seeking summer 2018 
+            internships.
+        </p>
+    </mat-card>
+    <mat-card class="education">
+        <mat-card-title class="edTitle">Education</mat-card-title>
+        <h1>The King's School Grantham</h1>
+        <p>GCSE: 14 A*-B</p>
+        <p>A levels:</p>
+            <ul>
+                <li>Maths: A</li>
+                <li>Physics: B</li>
+                <li>Computing: B</li>
+            </ul>
+            AS levels:
+            <ul>
+                <li>Further Maths: B</li>
+                <li>Biology: B</li>
+            </ul>
+    </mat-card>
+</div>

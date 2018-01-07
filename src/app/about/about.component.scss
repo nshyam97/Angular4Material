@@ -1,0 +1,19 @@
+* {
+    font-family: 'Catamaran', sans-serif;
+    color: black;
+}
+.header {
+    margin: 10px;
+    font-size: 20px;
+    max-height: 150px;
+    .hTitle {
+        font-size: 30px;
+    }
+}
+.education {
+    height: 500px;
+    margin-top: 10px;
+    .edTitle {
+        font-size: 30px;
+    }
+}
