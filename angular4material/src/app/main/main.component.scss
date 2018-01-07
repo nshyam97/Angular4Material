@@ -1,0 +1,16 @@
+mat-toolbar {
+    align-items: flex-start; 
+    height: 100px;
+
+    .title {
+        margin-top: 20px;
+        font-size: 50px;
+        font-family: Merriweather, serif;
+    }
+
+    .sub {
+        margin-left: 0px;
+        margin-bottom: 25px;
+        font-family: Raleway, sans-serif;
+    }
+}
