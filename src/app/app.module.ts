@@ -35,9 +35,6 @@ import { AboutComponent } from './about/about.component';
   providers: [],
   bootstrap: [
     AppComponent,
-    MainComponent,
-    ContactComponent,
-    AboutComponent
   ]
 })
 export class AppModule { }
