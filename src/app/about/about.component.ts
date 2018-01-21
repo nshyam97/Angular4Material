@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { trigger, state, animate, transition, style, keyframes } from '@angular/animations';
 
 @Component({
@@ -19,5 +19,7 @@ import { trigger, state, animate, transition, style, keyframes } from '@angular/
 
 })
 export class AboutComponent {
+  @Input()
+  isLight: boolean;
 
 }

@@ -3,5 +3,5 @@
     <button class="dark-mode" *ngIf="isLight" matTooltip="Bit too bright?" matTooltipPosition="before" (click)="changeMode()"><mat-icon>brightness_low</mat-icon></button>
     <button class="light-mode" *ngIf="isDark" matTooltip="Bit too dark?" matTooltipPosition="before" (click)="changeMode()"><mat-icon>brightness_high</mat-icon></button>
 </mat-toolbar>
-<about></about>
+<about [isLight]="isLight"></about>
 <contact></contact>

@@ -9,6 +9,10 @@ import * as jQuery from 'jquery';
 export class AppComponent {
   
   isDarkMode(event: boolean) {
-    console.log(event);
+    if (event) {
+      jQuery("body").css("background-color", "#000000");
+    } else {
+      jQuery("body").css("background-color", "#f2f2f2");
+    }
   }
 }

@@ -6,7 +6,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  @Output() isDarkMode = new EventEmitter<boolean>();
+  @Output() 
+  isDarkMode = new EventEmitter<boolean>();
 
   isLight: boolean;
   isDark: boolean;
