@@ -2,17 +2,27 @@
     font-family: 'Catamaran', sans-serif;
     color: black;
 }
+.parent {
+    margin-top: 120px;
+}
 .header {
     margin: 10px;
+    margin-top: 110px;
     margin-bottom: 5px;
     margin-right: 5px;
     font-size: 20px;
     max-width: 1300px;
+    transition: background-color 1s ease-in-out;
     .hTitle {
         font-size: 30px;
     }
+    &.dark > * {
+        color: white;
+        transition: color 1s ease-in-out;
+    }
     &.dark {
-        background-color: #A9A9A9 !important;
+        background-color: #666666 !important;
+        transition: background-color 1s ease-in-out;
     }
 }
 .background {
@@ -20,18 +30,31 @@
     margin-top: 5px;
     margin-right: 5px;
     max-width: 1300px;
+    transition: background-color 1s ease-in-out;
+    &.dark > * {
+        color: white;
+        transition: color 1s ease-in-out;
+    }
     &.dark {
-        background-color: #A9A9A9 !important;
+        background-color: #666666 !important;
+        transition: background-color 1s ease-in-out;
     }
 }
 .education {
-    margin-top: 10px;
+    margin-top: 110px;
     margin-right: 10px;
     margin-left: 5px;
+    transition: background-color 1s ease-in-out;
     .edTitle {
         font-size: 30px;
     }
+    &.dark > *, &.dark > * > * {
+        color: white;
+        transition: color 1s ease-in-out;
+    }
     &.dark {
-        background-color: #A9A9A9 !important;
+        color: white;
+        background-color: #666666 !important;
+        transition: background-color 1s ease-in-out;
     }
 }
