@@ -5,13 +5,18 @@ mat-toolbar {
     z-index: 2;
 
     .first, .second {
-        margin-top: 20px;
+        margin-top: 15px;
         font-size: 45px;
         font-family: 'Catamaran', sans-serif;
 
         &::first-letter {
             font-size: 90px;
         }
+    }
+    .current {
+        position: absolute;
+        top: 65px;
+        font-style: italic;
     }
     .dark-mode, .light-mode {
         background-color: transparent;
