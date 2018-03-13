@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
+import * as jQuery from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  
+  isDarkMode(event: boolean) {
+    if (event) {
+      jQuery("body").css("background-color", "#000000");
+    } else {
+      jQuery("body").css("background-color", "#f2f2f2");
+    }
+  }
 }

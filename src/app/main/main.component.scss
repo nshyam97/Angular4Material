@@ -1,16 +1,35 @@
 mat-toolbar {
     align-items: flex-start; 
     height: 100px;
+    position: fixed;
+    z-index: 2;
 
-    .title {
-        margin-top: 20px;
-        font-size: 50px;
-        font-family: Merriweather, serif;
+    .first, .second {
+        margin-top: 15px;
+        font-size: 45px;
+        font-family: 'Catamaran', sans-serif;
+
+        &::first-letter {
+            font-size: 90px;
+        }
     }
-
-    .sub {
-        margin-left: 0px;
-        margin-bottom: 25px;
-        font-family: Raleway, sans-serif;
+    .current {
+        position: absolute;
+        top: 65px;
+        font-style: italic;
+    }
+    .dark-mode, .light-mode {
+        background-color: transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+        position: absolute;
+        right: 60px;
+        top: 30px;
+    }
+    mat-icon {
+        font-size: 32px;
     }
 }

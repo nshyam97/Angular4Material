@@ -1,16 +1,8 @@
 <mat-toolbar class="mat-elevation-z5" color="primary">
-    <mat-toolbar-row>
-        <h1 class="title">Nishanth Shyam</h1>
-    </mat-toolbar-row>
-    <mat-toolbar-row>
-        <p class="sub">A small town computer science student with big city aspirations</p>
-    </mat-toolbar-row>
+    <h1 class="first">nishanth</h1><h1 class="second">shyam</h1>
+    <h2 class="current">Currently seeking summer 2018 internships</h2>
+    <button class="dark-mode" *ngIf="isLight" matTooltip="Bit too bright?" matTooltipPosition="before" (click)="changeMode()"><mat-icon>brightness_low</mat-icon></button>
+    <button class="light-mode" *ngIf="isDark" matTooltip="Bit too dark?" matTooltipPosition="before" (click)="changeMode()"><mat-icon>brightness_high</mat-icon></button>
 </mat-toolbar>
-<mat-tab-group>
-    <mat-tab label="About">
-        <about></about>
-    </mat-tab>
-    <mat-tab label="Contact">
-        <contact></contact>
-    </mat-tab>
-</mat-tab-group>
+<about [isLight]="isLight"></about>
+<contact></contact>
